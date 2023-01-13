@@ -235,6 +235,11 @@ button {
     width: 100%;
 }
 
+.header_section--no-image {
+    background: none;
+    height: auto;
+}
+
 .bg-light {
     /* background-image: url(../images/header-bg.png); */
     background-color: var(--dark-brand) !important;
@@ -570,10 +575,16 @@ button {
     width: 100%;
     float: left;
 }
-.blog_img{
+
+.blog_img {
     width: 100%;
     float: left;
 }
+
+.blog_img img {
+    border-radius: 4px;
+}
+
 .blog_taital{
     width: 100%;
     float: left;
@@ -584,13 +595,13 @@ button {
     font-family: 'Roboto', sans-serif;
 }
 .blog_text {
-    width: 100%;
-    float: left;
-    font-size: 16px;
     color: #141414;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
     margin: 0px;
     padding-top: 20px;
-    font-family: 'Roboto', sans-serif;
+    text-align: justify;
+    width: 100%;
 }
 
 
