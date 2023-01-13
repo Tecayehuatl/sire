@@ -156,7 +156,7 @@ html {
 .about_image::after {
     height: 330px;
 }
-.services_section{
+.services_section {
   background-size: cover;
 }
 .blog_taital {
@@ -211,7 +211,7 @@ html {
 .services_taital {
     width: 62%;
 }
-.services_section{
+.services_section {
   background-size: cover;
 }
 .blog_taital {
@@ -295,7 +295,7 @@ html {
 .about_taital_main {
     padding-top: 70px;
 }
-.services_section{
+.services_section {
   background-size: cover;
 }
 .about_section_2{
@@ -386,7 +386,7 @@ html {
 .about_taital_main {
     padding-top: 70px;
 }
-.services_section{
+.services_section {
   background-size: cover;
 }
 .about_section_2{
@@ -451,6 +451,19 @@ html {
 
     .navbar-toggler {
         background-color: var(--main-color);
+    }
+
+    .services_section {
+        background-position-x: center;
+    }
+
+    .carousel-indicators { 
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .carousel-indicators li {
+        margin: 5px;
     }
 }
 

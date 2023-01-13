@@ -226,11 +226,13 @@ button {
 /* header section start */
 
 .header_section {
+    background-image: url(../images/work/banner-1.jpg );
+    box-shadow: inset 0 -10em 0em var(--main-color);
+    background-position: center 25%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
     width: 100%;
-    float: left;
-    background-image: url(../images/banner-bg.png);
-    height: auto;
-    background-size: 100%;
 }
 
 .bg-light {
@@ -292,8 +294,8 @@ button {
 .banner_section {
     padding-top: 40px;
     padding-bottom: 70px;
-    border-bottom: 80px solid var(--main-color);
 }
+
 .banner_main {
     width: 44%;
     float: left;
@@ -364,19 +366,24 @@ button {
 }
 
 .carousel-indicators {
-    bottom: -120px;
+    padding: 40px;
 }
+
+.carousel--initial {
+    position: initial;
+}
+
 .carousel-indicators li {
-    width: 20px;
-    height: 20px;
-    border-radius: 100px;
     background-color: #ffffff;
+    border-radius: 100px;
+    height: 20px;
+    margin: 12px;
+    width: 20px;
 }
 
 .carousel-indicators .active {
     background-color: #000;
 }
-
 /* banner section end */
 
 /* about section start */
@@ -474,13 +481,29 @@ button {
 
 /* services section start */
 
-.services_section{
-    width: 100%;
-    float: left;
-    background-image: url(../images/services-bg.png);
-    background-size: 100%;
+.services_section {
+    background-image: url(../images/rapair-electricity.jpg);
+    background-position-y: 40%;
     background-repeat: no-repeat;
+    background-size: 100%;
+    background-size: cover;
+    float: left;
+    position: relative;
+    width: 100%;
 }
+
+.services_section:after {
+    background-color: rgba(0, 0, 0, 0.7);
+    bottom: 0;
+    content: ' ';
+    height: 100%;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+}
+
 .services_taital {
     width: 40%;
     float: left;
@@ -489,16 +512,25 @@ button {
     font-weight: bold;
     font-family: 'Roboto', sans-serif;
 }
-.services_taital::after {
-    content: '';
-    position: absolute;
-    width: 193px;
-    height: 2px;
-    background-color: #0f0f0f;
-    left: initial;
-    right: 0px;
-    top: 44%;
+
+.container--relative {
+    position: relative;
+    z-index: 99;
 }
+
+.container--relative h1, .container--relative p, .container--relative .selection_text { 
+    color: var(--brilliant);
+}
+
+.container--relative h1 {
+    color: var(--main-color);
+}
+
+.col--middle {
+    display: flex;
+    align-items: center;;
+}
+
 .services_section_2 {
     width: 100%;
     float: left;
@@ -839,6 +871,7 @@ textarea#comment::placeholder {
 #my_carousel .carousel-indicators {
     bottom: -100px;
 }
+
 #my_carousel .carousel-indicators li {
     width: 20px;
     height: 20px;
@@ -871,11 +904,12 @@ textarea#comment::placeholder {
     display: flex;
 }
 .location_text {
-    width: 100%;
-    float: left;
-    font-size: 16px;
     color: #8e8e8e;
     font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
 }
 
 .location_text a {
@@ -900,22 +934,25 @@ textarea#comment::placeholder {
     padding-top: 50px;
 }
 .footer_taital{
-    width: 100%;
-    float: left;
-    font-size: 20px;
     color: #ffffff;
+    font-family: 'Roboto', sans-serif;    
+    font-size: 20px;
     font-weight: bold;
-    font-family: 'Roboto', sans-serif;    
+    text-align: center;
+    width: 100%;
 }
-.footer_text{
-    width: 80%;
-    float: left;
-    font-size: 16px;
+.footer_text {
     color: #8e8e8e;
-    margin: 0px;
-    padding-top: 20px;
     font-family: 'Roboto', sans-serif;    
+    font-size: 16px;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+    text-transform: lowercase;
+    width: 100%;
 }
+
+.footer_text::first-letter { text-transform: uppercase; }
 
 .Enter_text {
     width: 100%;
@@ -930,17 +967,19 @@ textarea#comment::placeholder {
 }
 
 .social_icon {
-    width: 100%;
-    float: left;
-    padding-top: 20px;
+    display: flex;
+    justify-content: center;;
+    padding: 20px;
 }
 .social_icon ul {
+    display: flex;
+    justify-content: center;
     margin: 0px;
     padding: 0px;
 }
+
 .social_icon li {
-    float: left;
-    padding-right: 15px;
+    padding: 0 20px;
 }
 
 .subscribe_bt {
