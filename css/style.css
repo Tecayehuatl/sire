@@ -594,6 +594,11 @@ button {
     padding-top: 20px;
     font-family: 'Roboto', sans-serif;
 }
+
+.blog_taital--h2 {
+    font-size: 24px;
+}
+
 .blog_text {
     color: #141414;
     font-family: 'Roboto', sans-serif;
@@ -603,7 +608,6 @@ button {
     text-align: justify;
     width: 100%;
 }
-
 
 /* blog section end */
 
@@ -700,19 +704,13 @@ button {
 /* contact section start */
 
 .contact_section {
-    width: 100%;
-    float: left;
-    background-image: url(../images/contact-bg.png);
-    height: auto;
-    background-repeat: no-repeat;
-    background-size: cover;
     padding-bottom: 90px;
 }
+
 .contact_taital {
     width: 40%;
     float: left;
     font-size: 40px;
-    color: #ffffff;
     font-weight: bold;
     font-family: 'Roboto', sans-serif;
 }
@@ -730,7 +728,6 @@ button {
     width: 100%;
     float: left;
     font-size: 16px;
-    color: #ffffff;
     margin: 0px;
    font-family: 'Roboto', sans-serif;
 }
@@ -929,6 +926,17 @@ textarea#comment::placeholder {
 .location_text a:hover {
     color: #ffffff;
 }
+
+.location_text--contact {
+    color: var(--dark-brand);
+    text-align: left;
+    padding-bottom: 0;
+}
+
+.location_text--contact a:hover {
+    color: var(--dark-brand);
+}
+
 .padding_left_10 {
     padding-left: 10px;
 }
