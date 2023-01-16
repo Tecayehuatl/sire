@@ -226,7 +226,7 @@ button {
 /* header section start */
 
 .header_section {
-    background-image: url(../images/work/banner-1.jpg );
+    background-image: url(../images/work/banner-1.jpeg );
     box-shadow: inset 0 -10em 0em var(--main-color);
     background-position: center 25%;
     background-repeat: no-repeat;
