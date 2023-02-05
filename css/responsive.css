@@ -465,5 +465,13 @@ html {
     .carousel-indicators li {
         margin: 5px;
     }
+
+    .social_icon img {
+        width: 20px;
+    }
+    
+    .social_icon .social_icon__img--alt-1 {
+        width: 38px;
+    }
 }
 

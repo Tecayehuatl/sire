@@ -967,7 +967,6 @@ textarea#comment::placeholder {
     margin: 0;
     padding: 20px;
     text-align: center;
-    text-transform: lowercase;
     width: 100%;
 }
 
@@ -990,6 +989,7 @@ textarea#comment::placeholder {
     justify-content: center;;
     padding: 20px;
 }
+
 .social_icon ul {
     display: flex;
     justify-content: center;
@@ -999,6 +999,14 @@ textarea#comment::placeholder {
 
 .social_icon li {
     padding: 0 20px;
+}
+
+.social_icon img {
+    width: 20px;
+}
+
+.social_icon .social_icon__img--alt-1 {
+    width: 38px;
 }
 
 .subscribe_bt {
